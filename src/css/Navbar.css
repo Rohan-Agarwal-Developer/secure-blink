@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 140px 25px 144px;
+  }
+  
+  .logo {
+    opacity: 1;
+  }
+  
+  .login-button {
+    background: none;
+    border: none;
+    width: 56px;
+    height: 27px;
+    text-align: left;
+    font: normal normal bold 20px/27px Noto Sans;
+    letter-spacing: 0px;
+    color: #1f2532;
+    opacity: 1;
+  }
+  
+  .register-button {
+    margin-left: 56px;
+    width: 144px;
+    height: 60px;
+    background: #01cb63 0% 0% no-repeat padding-box;
+    /* box-shadow: 0px 5px 15px #01cb6359; */
+    border: none;
+    border-radius: 10px;
+    /* text-align: left; */
+    font: normal normal normal 20px/27px Noto Sans;
+    font-style: italic;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 10px;
+    }
+    .login-button {
+      background: none;
+      border: none;
+      width: 28px;
+      height: 13px;
+      text-align: left;
+      font: normal normal bold 20px/27px Noto Sans;
+      letter-spacing: 0px;
+      color: #1f2532;
+      opacity: 1;
+    }
+    
+    .register-button {
+      margin-left: 40px;
+      width: 85px;
+      height: 40px;
+      background: #01cb63 0% 0% no-repeat padding-box;
+      /* box-shadow: 0px 5px 15px #01cb6359; */
+      border: none;
+      border-radius: 10px;
+      /* text-align: left; */
+    }
+  }
+  
