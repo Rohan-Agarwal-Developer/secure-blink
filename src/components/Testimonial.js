@@ -35,7 +35,7 @@ const Testimonials = () => {
             <Col
               lg={6}
               md={6}
-              sm={1}
+              sm={12}
               style={{ padding: "20px", paddingBottom: "10px" }}
             >
               <div className="testimonial-card">

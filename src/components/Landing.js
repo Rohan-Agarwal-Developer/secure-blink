@@ -21,9 +21,9 @@ const Landing = () => {
   return (
     <Fragment>
       <Banner />
-      <NumberData />
+      <NumberData />  
       <Courses />
-      <Earners />
+      {/* <Earners /> */}
       <Refer />
       <Testimonials />
       <ContactPage />

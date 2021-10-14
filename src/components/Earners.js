@@ -30,17 +30,17 @@ const earners = [
 const Banner = () => {
   return (
     <Container fluid className="earner">
-      <div className="title">Top Earners</div>
-      <div className="description">Transforming Ideas into Reality</div>
-      <Row style={{overflowX: "scroll"}}>
+      {/* <div className="title">Top Earners</div> */}
+      {/* <div className="description">Transforming Ideas into Reality</div> */}
+      <Row>
         {earners.map((earner) => {
           return (
-            <Col lg={3} md={3} sm={3} className="earners-card">
+            <Col lg={3} md={6} sm={12} className="earners-card">
               <Card style={{ border: "none" }}>
-                <Card.Img variant="top" src={earner.img} alt="none" />
-                <Card.Body style={{ padding: 0, marginTop: "5px" }}>
+                {/* <Card.Img variant="top" src={earner.img} alt="none" /> */}
+                {/* <Card.Body style={{ padding: 0, marginTop: "5px" }}>
                   <Card.Title className="money">{earner.money}</Card.Title>
-                </Card.Body>
+                </Card.Body> */}
               </Card>
             </Col>
           );

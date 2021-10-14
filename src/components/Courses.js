@@ -53,7 +53,7 @@ const Courses = () => {
         <Row>
           {courses.map((course) => {
             return (
-              <Col lg={4} md={6} sm={6} className="course-card">
+              <Col lg={4} md={12} sm={12} className="course-card">
                 <Card>
                   <Card.Img variant="top" src={course.img} alt="none" />
                   <Card.Body>

@@ -23,7 +23,7 @@ const Banner = () => {
           <Button variant="dark">Let's Get Start</Button>
         </Col>
         <Col lg={6} md={12} sm={12} className="col-no-padding right">
-          <img src={image} width="100%" />
+          <img src={image} height="100%" width="100%"/>
         </Col>
       </Row>
     </Container>

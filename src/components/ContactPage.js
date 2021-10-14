@@ -20,7 +20,7 @@ const ContactPage = () => {
       <div className="title">Contact Us</div>
       <div className="description">Reach out with any questions you have</div>
       <Row className="contact-section">
-        <Col lg={4} md={4} sm={12}>
+        <Col lg={4} md={12} sm={12}>
           <div className="left-header">Contact Information</div>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src={message} className="icon"></img>
@@ -46,7 +46,7 @@ const ContactPage = () => {
         </Col>
         <Col
           lg={8}
-          md={8}
+          md={12}
           sm={12}
           className="right-column"
         >
