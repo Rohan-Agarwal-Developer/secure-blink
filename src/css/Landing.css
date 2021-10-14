@@ -1,8 +1,6 @@
 .rectangle25 {
   top: 110px;
   left: 960px;
-  /* width: 960px;
-height: 783px; */
   background: transparent url("../img/Rectangle 25.png") 0% 0% no-repeat
     padding-box;
   mix-blend-mode: multiply;
@@ -30,18 +28,12 @@ height: 783px; */
 }
 
 .get-started .head {
-  /* top: 249px;
-left: 140px; */
-  /* width: 655px;
-  height: 225px; */
   text-align: left;
   font: normal normal bold 55px/75px Noto Sans;
   letter-spacing: 0px;
   color: #ffffff;
   text-transform: capitalize;
   opacity: 1;
-  /* flex-wrap: wrap; */
-  /* overflow: auto; */
   margin-bottom: 35px;
 }
 
@@ -68,13 +60,11 @@ left: 140px; */
   text-align: center;
   padding: 70px 20px;
   align-items: center;
-  background: transparent url("../img/Group 12141.png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("../img/Group 12141.png") 0% 0% no-repeat padding-box;
   background-size: auto 100%;
 }
 
 .numbers .name {
-  /* text-align: center; */
   font: normal normal bold 35px/47px Noto Sans;
   letter-spacing: 0px;
   color: #86919d;
@@ -82,16 +72,13 @@ left: 140px; */
 }
 
 .numbers .number {
-  /* text-align: left; */
   font: normal normal bold 65px/88px Noto Sans;
   letter-spacing: 0px;
   color: #1f2532;
   opacity: 1;
-  /* border-bottom: 7px #01cb63; */
 }
 
 .numbers .color-band {
-  /* width: 140px;*/
   margin-left: 30%;
   margin-right: 30%;
   height: 7px;
@@ -154,7 +141,6 @@ left: 140px; */
 .courses .hours {
   display: flex;
   align-items: center;
-  /* overflow: auto; */
   width: 100%;
   margin-bottom: 20px;
   justify-content: space-between;
@@ -163,15 +149,13 @@ left: 140px; */
 .courses .time {
   width: 24px;
   height: 24px;
-  background: transparent url("../img/schedule-24px.png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("../img/schedule-24px.png") 0% 0% no-repeat padding-box;
 }
 
 .courses .calender {
   width: 24px;
   height: 24px;
-  background: transparent url("../img/date_range-24px.png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("../img/date_range-24px.png") 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
@@ -198,7 +182,6 @@ left: 140px; */
 .courses .lecturer {
   display: flex;
   align-items: center;
-  /* overflow: auto; */
   width: 100%;
   justify-content: space-between;
 }
@@ -206,7 +189,6 @@ left: 140px; */
 .courses .lecturer .picture {
   width: 50px;
   height: 50px;
-  /* background: transparent url("img/carla-oliveira-21FqSKZQGzI-unsplash.png") 0% 0% no-repeat padding-box; */
   opacity: 1;
   border-radius: 100%;
   border: 2px solid pink;
@@ -260,8 +242,6 @@ left: 140px; */
 }
 
 .earner .title {
-  /* width: 131px;
-  height: 34px; */
   text-align: left;
   font: normal normal italic 25px/34px Noto Sans;
   letter-spacing: 0px;
@@ -277,14 +257,16 @@ left: 140px; */
 }
 
 .earner .description {
-  /* width: 490px;
-  height: 109px; */
   text-align: left;
   font: normal normal bold 40px/54px Noto Sans;
   letter-spacing: 0px;
   color: #1f2532;
   text-transform: capitalize;
   opacity: 1;
+}
+
+.earner .card-image{
+  height: 200px;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -294,6 +276,17 @@ left: 140px; */
 
   .earner .description {
     padding: 5px 10px;
+  }
+
+  .earner .card-image{
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .earner .card-image{
+    height: 300px;
   }
 }
 
@@ -428,7 +421,6 @@ left: 140px; */
   letter-spacing: 0px;
   color: #01cb63;
   opacity: 1;
-  /* padding-left: 100px; */
 }
 
 .contact .description {
@@ -438,7 +430,6 @@ left: 140px; */
   color: #1f2532;
   text-transform: capitalize;
   opacity: 1;
-  /* padding-left: 100px; */
   margin-bottom: 60px;
 }
 
@@ -463,13 +454,11 @@ left: 140px; */
 }
 
 .contact .right-header {
-  /* text-align: center; */
   font: normal normal bold 25px/34px Noto Sans;
   letter-spacing: 0px;
   color: #201f23;
   opacity: 1;
   margin-bottom: 50px;
-  /* width: 400px; */
 }
 
 .contact .icon {
@@ -519,14 +508,11 @@ left: 140px; */
     padding-left: 10px;
   }
   .contact .right-header {
-    /* text-align: center; */
     margin-top: 50px;
-    /* width: 400px; */
   }
 }
 
 .footer {
-  /* margin: 0 50px 40px 50px; */
   margin-bottom: 40px;
   padding-left: 100px;
   padding-right: 100px;
@@ -608,7 +594,7 @@ left: 140px; */
   .courses .description{
     font: normal normal bold 30px/35px Noto Sans;
   }
-  .earners .description{
+  .earner .description{
     font: normal normal bold 30px/35px Noto Sans;
   }
   .contact .description{

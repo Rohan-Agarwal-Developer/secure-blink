@@ -23,7 +23,7 @@ const Landing = () => {
       <Banner />
       <NumberData />  
       <Courses />
-      {/* <Earners /> */}
+      <Earners />
       <Refer />
       <Testimonials />
       <ContactPage />

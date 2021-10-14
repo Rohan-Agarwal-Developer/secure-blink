@@ -6,8 +6,11 @@ import { Card } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 
 import course1 from "../img/course1.jpg";
-import course2 from "../img/course2.jpeg";
+import course2 from "../img/course2.jpg";
+import course3 from "../img/course3.png";
 import lecturer1 from "../img/lecturer1.jpeg";
+import lecturer2 from "../img/lecturer2.jpeg";
+import lecturer3 from "../img/lecturer3.jpeg";
 
 const courses = [
     {
@@ -22,18 +25,18 @@ const courses = [
       discountedprice: "1000",
     },
     {
-      img: course1,
+      img: course2,
       name: "Adobe Photoshop Training: From Beginner to Pro",
       students: "46995",
       hours: "10 hours 40 minutes",
       calender: "10 Lectures",
       lecturer: "Wanda Willson",
-      lecturerImage: lecturer1,
+      lecturerImage: lecturer2,
       price: "10000",
       discountedprice: "1000",
     },
     {
-      img: course1,
+      img: course3,
       name: "Social Media Marketing - A to Z Content Marketing class 2021",
       students: "46995",
       hours: "14 Hours",
