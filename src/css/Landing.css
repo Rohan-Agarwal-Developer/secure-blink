@@ -52,6 +52,7 @@ left: 140px; */
   }
   .get-started .head {
     margin-bottom: 15px;
+    font: normal normal bold 40px/55px Noto Sans;
   }
 }
 
@@ -96,6 +97,16 @@ left: 140px; */
   height: 7px;
   background: #01cb63 0% 0% no-repeat padding-box;
   opacity: 1;
+}
+
+@media only screen and (max-width: 1260px) {
+  .numbers .name {
+    font: normal normal bold 30px/40px Noto Sans;
+    margin-top: 10px;
+  }
+  .numbers .number{
+    font: normal normal bold 50px/60px Noto Sans;
+  }
 }
 
 .courses {
@@ -528,7 +539,7 @@ left: 140px; */
 
 .footer-left {
   text-align: left;
-  font: normal normal bold 25px/34px Noto Sans;
+  font: normal normal bold 20px/30px Noto Sans;
   letter-spacing: 0px;
   color: #1f2532;
   text-transform: capitalize;
@@ -538,7 +549,7 @@ left: 140px; */
 .footer-right {
   display: flex;
   text-align: center;
-  font: normal normal bold 22px/30px Noto Sans;
+  font: normal normal bold 15px/20px Noto Sans;
   letter-spacing: 0px;
   color: #1f2532;
   text-transform: capitalize;
@@ -593,5 +604,20 @@ left: 140px; */
   }
   .earner {
     padding: 10px 10px;
+  }
+  .courses .description{
+    font: normal normal bold 30px/35px Noto Sans;
+  }
+  .earners .description{
+    font: normal normal bold 30px/35px Noto Sans;
+  }
+  .contact .description{
+      font: normal normal bold 30px/35px Noto Sans;
+  }
+  .testimonials .description{
+      font: normal normal bold 30px/35px Noto Sans;
+  }
+  .background .description{
+      font: normal normal bold 30px/35px Noto Sans;
   }
 }
