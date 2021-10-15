@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { Card } from "react-bootstrap";
@@ -14,7 +14,37 @@ import twitterIcon from "../img/Twitter.png";
 import LinkedinIcon from "../img/Linkedin.png";
 import githubIcon from "../img/Github.png";
 
+import validator from 'validator'
+
+// import Locader from "./Loader";
+
+// function Async<T>({ promise, then, catch: _catch }: AsyncProps<T>) {
+//   return <_Async promise={promise} pending={<Loader />} then={then} catch={_catch} />;
+// }
+
 const ContactPage = () => {
+
+  const [form, setForm] = useState({email: "", phone: ""}) 
+  const [emailError, setEmailError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
+  const handleChange = (e) => {
+    setForm({
+        ...form,
+        [e.target.name]: e.target.value
+    })
+  }
+
+  const onSubmit = () => {
+    var email = form.email;
+    if (validator.isEmail(email)) {
+    } else {
+      setEmailError('Enter valid Email!')
+    }
+    if (validator.isMobilePhone(form.phone, 'any')) {
+    } else {
+      setPhoneError('Enter valid Phone number!')
+    }
+  }
   return (
     <Container fluid className="contact">
       <div className="title">Contact Us</div>
@@ -44,12 +74,7 @@ const ContactPage = () => {
             <img src={githubIcon} className="social-icons"></img>
           </div>
         </Col>
-        <Col
-          lg={8}
-          md={12}
-          sm={12}
-          className="right-column"
-        >
+        <Col lg={8} md={12} sm={12} className="right-column">
           <div style={{ textAlign: "center" }}>
             <div className="right-header" style={{ textAlign: "center" }}>
               Fill up the form and out team will get back to you in 24 hours
@@ -59,11 +84,14 @@ const ContactPage = () => {
             <Row>
               <Col lg={6} md={6} sm={12}>
                 <input
-                  className="input"
-                  type="text"
-                  name="name"
+                className="input"
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder="Email"
                 />
+                <div style={{textAlign:"left", color:"red"}}>{emailError}</div>
               </Col>
               <Col lg={6} md={6} sm={12}>
                 <input
@@ -72,6 +100,7 @@ const ContactPage = () => {
                   name="name"
                   placeholder="Name"
                 />
+                
               </Col>
             </Row>
             <Row>
@@ -79,9 +108,12 @@ const ContactPage = () => {
                 <input
                   className="input"
                   type="text"
-                  name="name"
+                  name="phone"
                   placeholder="Phone"
+                  value={form.phone}
+                  onChange={handleChange}
                 />
+                <div style={{textAlign:"left", color:"red"}}>{phoneError}</div>
               </Col>
               <Col lg={6} md={6} sm={12}>
                 <input
@@ -100,11 +132,10 @@ const ContactPage = () => {
                   rows="4"
                   cols="40"
                   placeholder="Message"
-                >
-                </textarea>
+                ></textarea>
               </Col>
             </Row>
-            <Button variant="dark">Submit</Button>
+            <Button variant="dark" onClick={onSubmit}>Submit</Button>
           </form>
         </Col>
       </Row>
